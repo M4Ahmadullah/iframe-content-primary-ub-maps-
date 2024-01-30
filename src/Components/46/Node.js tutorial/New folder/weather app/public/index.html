@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfjpxr-82zrl0hjcp4xCECzJb3Hskg5BU&libraries=places&callback=initMap">
+    </script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon-container">
+                <canvas id="icon" width="100" height="100"></canvas>
+            </div>
+        </div>
+        <div class="content">
+            <div class="general-information">
+                <div class="status">Enter a Location</div>
+                <div class="location">To Find The Weather</div>
+            </div>
+        </div>
+        <div class="details-section">
+            <div class="detail">
+                <div class="title">Wind</div>
+                <div class="value">TBD</div>
+            </div>
+            <div class="detail">
+                <div class="title">Temprature</div>
+                <div class="value">TBD</div>
+            </div>
+            <div class="detail">
+                <div class="title">precipitaion</div>
+                <div class="value">TBD</div>
+            </div>
+        </div>
+        <div class="city-search-container">
+            <input type="text" class="city-search" data-city-search placeholder="Enter Loaction" required>            
+        </div>
+    </div>
+    <a class="storm-glass-logo" href="https://stormglass.io/?_gl=1%2Aydagvj%2A_gcl_aw%2AR0NMLjE2OTY5NDYzMTIuQ2owS0NRanc3Sk9wQmhDZkFSSXNBTDNib2JkVEVkTFplQnAySG5lVkJsVFcwUzRyMWhBNUhDeWw4cDVmRVMxLW4yLUhSMWNfaFdOS2lYSWFBckR0RUFMd193Y0I.%2A_gcl_au%2AMTcwNTkxNTY5MC4xNjk2OTQ2MzA1">Powered By stormglass.io</a>
+</body>
+</html>
